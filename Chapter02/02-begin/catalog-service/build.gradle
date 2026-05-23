@@ -30,17 +30,36 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
+tasks.register('printRuntimeClasspath') {
+    doLast {
+        println sourceSets.main.runtimeClasspath.asPath
+    }
+}
+
+// NOTE: yes actually needed for build on save
 // JDT (Java extension) compiles to Gradle output so DevTools + bootRun see changes.
+// Resources must use Gradle's processResources output (build/resources/*), not
+// build/classes/java/* — otherwise bootJar sees application.properties twice.
 eclipse {
 	classpath {
 		baseSourceOutputDir = file('build/classes/java')
+		file {
+			whenMerged { classpath ->
+				classpath.entries.findAll {
+					it instanceof org.gradle.plugins.ide.eclipse.model.SourceFolder && it.path.endsWith('/resources')
+				}.each { entry ->
+					entry.output = entry.path.contains('test')
+						? 'build/resources/test'
+						: 'build/resources/main'
+				}
+			}
+		}
 	}
 	synchronizationTasks processResources
 }
 
-// eclipse {
-//     classpath {
-//         baseSourceOutputDir = file('build/classes/java')
-//     }
-//     synchronizationTasks processResources
+// Optional safety net (if duplicates ever return):
+//
+// tasks.named('bootJar') {
+//     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 // }
