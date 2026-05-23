@@ -21,15 +21,31 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-validation' 
+
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
+	testImplementation 'org.springframework.boot:spring-boot-starter-webflux' 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 tasks.named('test') {
-	useJUnitPlatform()
+    useJUnitPlatform()
+
+    testLogging {
+        events 'passed', 'skipped', 'failed'
+    }
+
+    afterSuite { desc, result ->
+        if (!desc.parent) { // root suite only
+            println "\nTests: ${result.testCount}, Passed: ${result.successfulTestCount}, Failed: ${result.failedTestCount}, Skipped: ${result.skippedTestCount}"
+        }
+    }
 }
+
+// tasks.named('test') {
+// 	useJUnitPlatform()
+// }
 
 tasks.register('printRuntimeClasspath') {
     doLast {
