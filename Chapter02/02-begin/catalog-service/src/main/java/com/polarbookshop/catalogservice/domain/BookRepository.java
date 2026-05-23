@@ -4,14 +4,13 @@ import java.util.Optional;
 
 public interface BookRepository {
 
-    Iterable<Book> findAll();
+  Iterable<Book> findAll();
 
-    Optional<Book> findByIsbn(String isbn);
+  Optional<Book> findByIsbn(String isbn);
 
-    boolean existsByIsbn(String isbn);
+  boolean existsByIsbn(String isbn);
 
-    Book save(Book book);
+  Book save(Book book);
 
-    void deleteByIsbn(String isbn);
-
+  void deleteByIsbn(String isbn);
 }

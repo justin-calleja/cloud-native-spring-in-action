@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
 
-    @GetMapping("/")
-    public String getGreeting() {
-        System.out.println(">> in getGreeting");
-        return "Welcome to the book catalog";
-    }
+  @GetMapping("/")
+  public String getGreeting() {
+    System.out.println(">> in getGreeting");
+    return "Welcome to the book catalog";
+  }
 }

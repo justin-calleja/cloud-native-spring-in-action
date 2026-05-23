@@ -27,6 +27,11 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry sourcepath="/home/justin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/3.5.14/6f51126a97c261fd3abb76ac8130ab1fc95a1d61/spring-boot-starter-validation-3.5.14-sources.jar" kind="lib" path="/home/justin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/3.5.14/1cfaddd51c16b66cc9277bc4edb37f3cdee46557/spring-boot-starter-validation-3.5.14.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry sourcepath="/home/justin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/3.5.14/ba34a639e6b0a16543f6fedeaac9391d2d0641c6/spring-boot-starter-json-3.5.14-sources.jar" kind="lib" path="/home/justin/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/3.5.14/74f384df64ca6c00c673b4dbe00777caad025625/spring-boot-starter-json-3.5.14.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
@@ -48,6 +53,16 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry sourcepath="/home/justin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/6.2.18/e7ebad4e12b4ae8340a36a999fe65f340e3b38ab/spring-web-6.2.18-sources.jar" kind="lib" path="/home/justin/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/6.2.18/ac559d752f215711184cb1bdcc941c83eef2cf3/spring-web-6.2.18.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/justin/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/10.1.54/7de7dc117f6c3729beff5ffea3196ede3adb31d3/tomcat-embed-el-10.1.54-sources.jar" kind="lib" path="/home/justin/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/10.1.54/8af3510d4998478bf0eb94bf65a78479179fa88e/tomcat-embed-el-10.1.54.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/justin/.gradle/caches/modules-2/files-2.1/org.hibernate.validator/hibernate-validator/8.0.3.Final/95357823232b7fc40be5f57888669f239bd5904c/hibernate-validator-8.0.3.Final-sources.jar" kind="lib" path="/home/justin/.gradle/caches/modules-2/files-2.1/org.hibernate.validator/hibernate-validator/8.0.3.Final/4425f554297a1c5ba03a3f30e559a9fd91048cf8/hibernate-validator-8.0.3.Final.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -137,12 +152,22 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/justin/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/10.1.54/7de7dc117f6c3729beff5ffea3196ede3adb31d3/tomcat-embed-el-10.1.54-sources.jar" kind="lib" path="/home/justin/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/10.1.54/8af3510d4998478bf0eb94bf65a78479179fa88e/tomcat-embed-el-10.1.54.jar">
+	<classpathentry sourcepath="/home/justin/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-observation/1.15.11/1881c55a087a02ebe67bf615f9a18432e8b0c113/micrometer-observation-1.15.11-sources.jar" kind="lib" path="/home/justin/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-observation/1.15.11/c8617ccce41d922de569e904b765a6c70499cc97/micrometer-observation-1.15.11.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/justin/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-observation/1.15.11/1881c55a087a02ebe67bf615f9a18432e8b0c113/micrometer-observation-1.15.11-sources.jar" kind="lib" path="/home/justin/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-observation/1.15.11/c8617ccce41d922de569e904b765a6c70499cc97/micrometer-observation-1.15.11.jar">
+	<classpathentry sourcepath="/home/justin/.gradle/caches/modules-2/files-2.1/jakarta.validation/jakarta.validation-api/3.0.2/b1581d1ef516be94c473c0f4d97e59e394c70150/jakarta.validation-api-3.0.2-sources.jar" kind="lib" path="/home/justin/.gradle/caches/modules-2/files-2.1/jakarta.validation/jakarta.validation-api/3.0.2/92b6631659ba35ca09e44874d3eb936edfeee532/jakarta.validation-api-3.0.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/justin/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.6.3.Final/672a66768747a183de4a43110f5fa5a430f6f715/jboss-logging-3.6.3.Final-sources.jar" kind="lib" path="/home/justin/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.6.3.Final/1cc9f976725720bb4a66f80af3e3aa6b9890d969/jboss-logging-3.6.3.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/justin/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.7.3/51e15ea3494c9f095b984e19520124a0ab2d67dd/classmate-1.7.3-sources.jar" kind="lib" path="/home/justin/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.7.3/f61c7e7b81e9249b0f6a05914eff9d54fb09f4a0/classmate-1.7.3.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
